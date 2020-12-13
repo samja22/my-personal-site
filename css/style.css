@@ -1,0 +1,278 @@
+/****************
+    GENERAL
+*****************/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    margin-top: 35px;
+    float: right;
+    width: 75%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #000;
+    font-size: 1.65em;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+p {
+    color:#000;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    clear: both;
+}
+
+/****************
+    INTRO PAGE
+*****************/
+.intro {
+    margin: 55px 35px 20px;
+}
+
+.intro > p {
+    font-family: "Helvetica", sans-serif;
+    font-weight: 400;
+}
+
+#rectangle {
+    position: relative;
+    width: 550px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+/*    transform: skewX(-20deg);*/
+    box-shadow: 5px 5px 5px 5px;
+}
+
+#rectangle > h1 {
+    position: absolute;
+    top: 15px;
+    left: 85px;
+    font-family: 'Playfair Display';
+    font-size: 3.25em;
+    text-align: center;
+}
+
+.intro p {
+    text-align: center;
+    box-shadow: 0 0 10px grey; 
+    width: 400px;
+    line-height: 2;
+    padding-top: 4px;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.intro p:last-of-type {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#arrow {
+    display: block;
+    max-height: 55px;
+    margin: 15px auto;
+}
+
+#enter-btn {
+    max-width: 75px;
+}
+
+/****************
+    HEADER
+*****************/
+aside {
+    float: left;
+    position: sticky;
+    top: 0;
+    width: 20%;
+    margin-top: 35px;
+    margin-left: 20px;
+    padding-left: 5px;
+}
+
+#title {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    margin-left: 5px;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+/****************
+    ABOUT
+*****************/
+#row {
+    columns: 350px 2;
+    column-gap: 1.5em;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#col-1 {
+/*    float: left;*/
+    max-width: 450px;
+}
+
+#col-2 {
+/*    float: right;*/
+    max-width: 500px;
+/*    margin-right: 20px;*/
+}
+
+.about-me {
+    padding: 0;
+    margin-top: 0px;
+    font-size: 1.25em;
+    line-height: 1.75;
+    text-align: left;
+}
+
+h4.about-me {
+    margin-top: 0;
+}
+
+ul.about-me li {
+    margin-left: 10px;
+}
+
+ul.about-me li:before {
+    content: '—';
+}
+
+#about-img {
+    border-radius: 5%;
+    max-width: 350px;
+    max-height: 500px;
+}
+
+/****************
+    WORK
+*****************/
+#work {
+    text-align: center;
+}
+
+#work h1 {
+    margin-bottom: 25px;
+}
+
+#work p:first-of-type {
+    margin-bottom: 50px;
+}
+#work button {
+    background-color: rgba(221,160,221);
+    box-shadow: 2px 2px 2px 2px;
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    border-style: none;
+    border-radius: 1em;
+    font-size: 1.5em;
+}
+
+#work button:first-of-type {
+    margin-right: 50px;
+}
+
+#work button:hover {
+    opacity: 0.5;
+}
+
+.work-row {
+    box-shadow: 0 0 10px grey;
+    max-width: 85%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+#writing p:first-of-type {
+    padding-top: 1em;
+    margin-bottom: 10px;
+}
+
+#writing p:last-of-type {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.work-img {
+    width: 300px;
+    height: 200px;
+    padding-bottom: .5em;
+    padding-left: .5em;
+}
+
+.work-img:hover {
+    opacity: 0.5;
+}
+
+/****************
+    BLOG
+*****************/
+article {
+    max-width: 75%;
+    max-height: 350px;
+    margin-bottom: 25px;
+    margin-left: 70px;
+    background-color: white;
+    box-shadow: 0 0 10px grey; 
+    overflow-y: scroll;
+}
+
+article > h1,
+article > p {
+    padding: 0 5px 5px;
+}
+
+/****************
+    CLEAR FIX
+*****************/
+
+.container:after {
+    content: " ";
+    display: table;
+    clear:both;
+}
