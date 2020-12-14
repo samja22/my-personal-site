@@ -132,9 +132,14 @@ MQ @ Max 760
         width: 250px;
         height: 150px;
     }
+    
+    /****************]
+        BLOG
+    *****************/
+    article {
+        overflow-y: scroll;
+    }
 }
-
-
 /****************
 MQ @ Max 600
 *****************/
@@ -203,5 +208,16 @@ MQ @ Max 600
     
     #work button:first-of-type {
         margin-right: auto;
+    }
+    
+    /****************
+        BLOG
+    *****************/
+    article {
+        max-width: 80%;
+        max-height: 350px;
+    }
+    article img {
+        max-width: 225px;
     }
 }

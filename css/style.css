@@ -252,20 +252,38 @@ ul.about-me li:before {
 /****************
     BLOG
 *****************/
-article {
-    max-width: 75%;
-    max-height: 350px;
-    margin-bottom: 25px;
-    margin-left: 70px;
-    background-color: white;
-    box-shadow: 0 0 10px grey; 
-    overflow-y: scroll;
+#blog h1 {
+    text-align: center;
 }
 
-article > h1,
-article > p {
-    padding: 0 5px 5px;
+article {
+    max-width: 70%;
+    max-height: 550px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 0 5px grey;
 }
+
+article > p {
+    padding: 15px 10px;
+    margin: 0px;
+}
+
+
+article > p:last-of-type {
+    padding-top: 0;
+}
+article img {
+    max-width: 450px;
+    max-height: 400px;
+    padding-left: 10px;
+    padding: 15px 10px;
+}
+
+
 
 /****************
     CLEAR FIX
